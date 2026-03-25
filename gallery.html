@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery | Ethiopian New Year 2017</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-sun icon-yellow"></i> Enkutatash <span class="year">2017</span>
+            </a>
+            <nav class="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="schedule.html" class="nav-link">Schedule</a></li>
+                    <li><a href="traditions.html" class="nav-link">Traditions</a></li>
+                    <li><a href="location.html" class="nav-link">Location</a></li>
+                    <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-link btn-contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="burger-menu" id="burger-menu">
+                <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav-overlay" id="mobile-nav">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="mobile-nav-link">Home</a></li>
+            <li><a href="schedule.html" class="mobile-nav-link">Schedule</a></li>
+            <li><a href="traditions.html" class="mobile-nav-link">Traditions</a></li>
+            <li><a href="location.html" class="mobile-nav-link">Location</a></li>
+            <li><a href="gallery.html" class="mobile-nav-link active">Gallery</a></li>
+            <li><a href="contact.html" class="mobile-nav-link btn-contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <section class="section bg-light" style="padding-top: 8rem; padding-bottom: 3rem;">
+        <div class="container text-center">
+            <h1 class="section-title">Photo Gallery</h1>
+            <p class="section-subtitle">Moments from past celebrations and preparations for 2017.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container fade-in-scroll">
+            <div class="gallery-grid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item">
+                    <img src="images/meskel.png" alt="Meskel Flowers">
+                    <div class="gallery-overlay">
+                        <p>Blooming Meskel Flowers</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item">
+                    <img src="images/food.png" alt="Traditional Food">
+                    <div class="gallery-overlay">
+                        <p>Traditional Enkutatash Feast</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 3 (Filtered) -->
+                <div class="gallery-item">
+                    <img src="images/meskel.png" alt="Meskel Filtered" style="filter: sepia(0.5) contrast(1.2);">
+                    <div class="gallery-overlay">
+                        <p>Yellow Highlands</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 100%; background: var(--color-green); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-fire" style="font-size: 4rem; color: #fff;"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <p>Chibo Bonfire</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item">
+                    <img src="images/food.png" alt="Coffee Ceremony" style="filter: brightness(0.8);">
+                    <div class="gallery-overlay">
+                        <p>Coffee Ceremony Preparation</p>
+                    </div>
+                </div>
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item">
+                    <div style="width: 100%; height: 100%; background: var(--color-yellow); display: flex; align-items: center; justify-content: center;">
+                        <i class="fa-solid fa-people-group" style="font-size: 4rem; color: #000;"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <p>Community Gatherings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo text-white">
+                        <i class="fa-solid fa-sun icon-yellow"></i> Enkutatash <span class="year">2017</span>
+                    </a>
+                    <p class="footer-desc">A collaborative project celebrating the rich culture, traditions, and joy of the Ethiopian New Year.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="schedule.html">Schedule</a></li>
+                        <li><a href="traditions.html">Traditions</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-envelope"></i> contact@enkutatash2017.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +251 911 234 567</p>
+                    <a href="contact.html" class="btn btn-outline-white mt-3">Get in Touch</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Web Class Project. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

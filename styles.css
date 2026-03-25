@@ -709,6 +709,164 @@ img {
 .badge-red { background: rgba(226, 33, 28, 0.1); color: var(--color-red); }
 
 /* =========================================
+   TRADITIONS, MAPS, GALLERY, CONTACT
+   ========================================= */
+.tradition-card {
+    background: #fff;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-row-reverse {
+    flex-direction: row-reverse;
+}
+.tradition-img {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--color-bg);
+}
+.tradition-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tradition-content {
+    flex: 1;
+    padding: 3rem;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mb-3 { margin-bottom: 1rem; }
+.mb-4 { margin-bottom: 1.5rem; }
+.p-5 { padding: 3rem; }
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+}
+.map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    height: 450px;
+}
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+}
+.contact-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(15, 138, 93, 0.1);
+    color: var(--color-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+.contact-form {
+    background: #fff;
+    padding: 3rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-md);
+}
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.form-label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+.form-control {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+.form-control:focus {
+    outline: none;
+    border-color: var(--color-green);
+    box-shadow: 0 0 0 3px rgba(15, 138, 93, 0.1);
+}
+textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+.gallery-item {
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    aspect-ratio: 1;
+    cursor: pointer;
+    background: var(--color-bg);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.gallery-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%);
+    opacity: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.5rem;
+    transition: var(--transition);
+}
+.gallery-overlay p {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transform: translateY(20px);
+    transition: var(--transition);
+}
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+.gallery-item:hover .gallery-overlay p {
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .tradition-card { flex-direction: column !important; }
+    .contact-grid { grid-template-columns: 1fr; }
+}
+
+/* =========================================
    ANIMATIONS & EFFECTS
    ========================================= */
 .fade-in-scroll {
